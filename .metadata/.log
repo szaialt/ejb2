@@ -1,0 +1,293 @@
+!SESSION 2015-11-21 15:27:56.437 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=hu_HU
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-11-21 15:30:04.411
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 15:30:59.174
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 15:30:59.183
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 15:30:59.183
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 15:30:59.183
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-11-21 15:36:40.001
+!MESSAGE IWAE0027E Could not retrieve the validation configuration for resource people-cl.
+!STACK 0
+java.lang.reflect.InvocationTargetException: IWAE0027E Could not retrieve the validation configuration for resource people-cl.
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:135)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getConfiguration(ConfigurationManager.java:251)
+	at org.eclipse.wst.validation.internal.ValManager.getValidatorsNotCached(ValManager.java:226)
+	at org.eclipse.wst.validation.internal.ValManager.access$1(ValManager.java:220)
+	at org.eclipse.wst.validation.internal.ValManager$ValidatorCache.getValidatorsCached(ValManager.java:1263)
+	at org.eclipse.wst.validation.internal.ValManager.getValidators(ValManager.java:197)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:745)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:201)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/people-cl' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:147)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:221)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1274)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:126)
+	... 10 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Resource '/people-cl' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:147)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:221)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1274)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:126)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getConfiguration(ConfigurationManager.java:251)
+	at org.eclipse.wst.validation.internal.ValManager.getValidatorsNotCached(ValManager.java:226)
+	at org.eclipse.wst.validation.internal.ValManager.access$1(ValManager.java:220)
+	at org.eclipse.wst.validation.internal.ValManager$ValidatorCache.getValidatorsCached(ValManager.java:1263)
+	at org.eclipse.wst.validation.internal.ValManager.getValidators(ValManager.java:197)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:745)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:201)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2015-11-21 16:04:59.812 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=hu_HU
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-11-21 16:05:14.121
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 16:05:39.545
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 16:05:39.590
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 16:05:39.593
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 16:05:39.604
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+!SESSION 2015-11-21 16:38:21.361 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=hu_HU
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-11-21 16:38:33.554
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 16:38:50.428
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 16:38:50.440
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 16:38:50.441
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-21 16:38:50.441
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+!SESSION 2015-11-26 10:39:24.106 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=hu_HU
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-11-26 10:39:41.789
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-26 10:40:11.671
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-26 10:40:11.692
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-26 10:40:11.692
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-26 10:40:11.693
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+!SESSION 2015-11-26 16:34:36.316 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=hu_HU
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-11-26 16:34:55.672
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-11-26 16:34:59.591
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-26 16:35:42.784
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-26 16:35:42.804
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-26 16:35:42.805
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-26 16:35:42.805
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+!SESSION 2015-11-28 15:10:06.774 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=hu_HU
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-11-28 15:11:26.842
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-28 15:12:05.244
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-28 15:12:05.289
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-28 15:12:05.289
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-28 15:12:05.290
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+!SESSION 2015-11-28 17:18:47.554 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=hu_HU
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-11-28 17:19:38.380
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-28 17:21:36.313
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-28 17:21:36.370
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-28 17:21:36.395
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-11-28 17:21:36.397
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+!SESSION 2015-12-01 13:10:49.938 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=hu_HU
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product -data /home/anna/Elosztott_alkalmazasok/2014/ejb2 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-12-01 13:10:58.697
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-12-01 13:11:21.277
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-12-01 13:11:21.345
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-12-01 13:11:21.346
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-12-01 13:11:21.347
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
